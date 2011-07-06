@@ -1,0 +1,11 @@
+--- reprepro.orig/sourceextraction.c	2011-07-06 23:42:47.336210836 +0700
++++ reprepro/sourceextraction.c	2011-07-06 23:44:03.068212387 +0700
+@@ -484,7 +484,7 @@
+ 	buffer[len] = '\0';
+ 	// TODO: allow a saved .diff for this file applied here
+ 
+-	controllen = chunk_extract(buffer, buffer, &aftercontrol);
++	//controllen = chunk_extract(buffer, buffer, &aftercontrol);
+ 
+ 	if( e->section_p != NULL )
+ 		(void)chunk_getvalue(buffer, "Section", e->section_p);
